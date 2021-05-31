@@ -1,0 +1,2 @@
+$((function(){$(".hamburger").click((function(){$(this).toggleClass("active"),$(this).hasClass("active")?$(".globalNav-menu").addClass("active"):$(".globalNav-menu").removeClass("active")}))}));
+//# sourceMappingURL=script.js.map
