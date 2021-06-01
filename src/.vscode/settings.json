@@ -9,7 +9,7 @@
     },
     "editor.suggest.insertMode": "replace"
   },
-  "emmet.includeLanguages": {
-    "ejs": "html",
-},
+  "htmlhint.options": {
+    "spec-char-escape": false
+}
 }
