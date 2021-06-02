@@ -32,3 +32,8 @@
 	}
 }
 
+@mixin nav{
+	display: inline-block;
+  transition: all .5s;
+  box-sizing: border-box;
+}

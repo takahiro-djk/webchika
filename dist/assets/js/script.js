@@ -1,2 +1,2 @@
-$((function(){$(".hamburger").click((function(){$(this).toggleClass("active"),$(this).hasClass("active")?$(".globalNav-menu").addClass("active"):$(".globalNav-menu").removeClass("active")}))}));
+$((function(){$(".btn-trigger").on("click",(function(){return $(this).toggleClass("active"),!1}))}));
 //# sourceMappingURL=script.js.map

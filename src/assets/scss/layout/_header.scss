@@ -1,107 +1,58 @@
-Í/*　ハンバーガーボタン　*/
-.hamburger {
-  display: block;
-  position: fixed;
-  z-index: 3;
-  right: 13px;
-  top: 12px;
-  width: 42px;
-  height: 42px;
+.btn-trigger {
+  position: relative;
+  width: 50px;
+  height: 44px;
   cursor: pointer;
-  text-align: center;
-
+  @include nav;
 
   span {
-    display: block;
     position: absolute;
-    width: 30px;
-    height: 2px;
-    left: 6px;
-    background: #555;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-
-
-    &:nth-child(1) {
-      top: 10px;
-    }
-
-    &:nth-child(2) {
-      top: 20px;
-    }
-
-    &:nth-child(3) {
-      top: 30px;
-    }
-  }
-
-
-  /* ナビ開いてる時のボタン */
-  .active span:nth-child(1) {
-    top: 16px;
-    left: 6px;
-    background: $black;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-
-  .active span:nth-child(2),
-  .active span:nth-child(3) {
-    top: 16px;
-    background: $black;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-}
-
-nav.globalNav-menu {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.7);
-  text-align: center;
-  width: 100%;
-  opacity: 0;
-  transition: opacity .6s ease, visibility .6s ease;
-
-
-  ul {
-    margin: 0 auto;
-    padding: 0;
+    left: 0;
     width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    @include nav;
+  }
 
+  span:nth-of-type(1) {
+    top: 0;
+  }
 
-    li {
-      list-style-type: none;
-      padding: 0;
-      width: 100%;
-      transition: .4s all;
+  span:nth-of-type(2) {
+    top: 20px;
+  }
 
-      &:last-child {
-        padding-bottom: 0;
-      }
-
-      &:hover {
-        background: #ddd;
-      }
-
-      a {
-        display: block;
-        color: #fff;
-        padding: 1em 0;
-        text-decoration: none;
-      }
-    }
+  span:nth-of-type(3) {
+    bottom: 0;
   }
 }
 
-/* このクラスを、jQueryで付与・削除する */
-nav.globalNav-menu.active {
-  opacity: 100;
+#btn.active span:nth-of-type(1) {
+  -webkit-transform: translateY(20px) rotate(-45deg);
+  transform: translateY(20px) rotate(-45deg);
+}
 
+#btn.active span:nth-of-type(2) {
+  left: 50%;
+  opacity: 0;
+  -webkit-animation: active-btn05-bar02 .8s forwards;
+  animation: active-btn05-bar02 .8s forwards;
+}
+
+@-webkit-keyframes active-btn-bar02 {
+  100% {
+    height: 0;
+  }
+}
+
+@keyframes active-btn-bar02 {
+  100% {
+    height: 0;
+  }
+}
+
+#btn.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-20px) rotate(45deg);
+  transform: translateY(-20px) rotate(45deg);
 }
