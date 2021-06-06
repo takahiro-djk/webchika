@@ -1,0 +1,9 @@
+.c-text_area {
+  &_inner {
+    &--big {
+      @include fz("18", "16");
+      line-height: 2.22em;
+      margin-bottom: 2.22em;
+    }
+  }
+}
