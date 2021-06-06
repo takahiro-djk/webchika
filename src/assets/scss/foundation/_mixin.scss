@@ -13,12 +13,12 @@
 // font-size
 @mixin fz($font_pc: "", $font_sp: ""){
   font-size: #{$font_pc}px;
-  font-size: #{$font_pc / 100}rem;
+  font-size: calc(#{$font_pc} / 10 *1rem);
 
   @if ($font_sp != "") {
     @include sp {
       font-size: #{$font_sp}px;
-      font-size: #{$font_sp / 100}rem;
+			font-size: calc(#{$font_sp} / 10 *1rem);
     }
   }
 }

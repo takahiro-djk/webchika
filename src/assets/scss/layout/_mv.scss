@@ -1,0 +1,42 @@
+.l-mv {
+  background: url(/assets/img/mv_bg.jpg) 20% 65% / cover no-repeat;
+  height: calc(100vh - 80px);
+
+  &_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100% - 80px);
+    color: $white;
+
+    h1 {
+      @include fz("92", "48");
+      font-weight: bold;
+    }
+
+    p {
+      @include fz("26", "18");
+      font-weight: bold;
+    }
+  }
+
+  &_sns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: $white;
+
+    li:not(:last-child) {
+      margin-right: 2.22em;
+
+      a {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
