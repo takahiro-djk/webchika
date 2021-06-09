@@ -1,10 +1,42 @@
 .c-btn {
-  @include fz("20","18");
+  @include fz("20", "18");
   background-color: $yellow;
-  display: inline-block;
+  display: block;
   width: 100%;
   max-width: 200px;
   padding: 18px 0;
   text-align: center;
   border-radius: 31px;
+
+  &--center {
+    @extend .c-btn;
+    margin: 0 auto;
+  }
+
+  &--line {
+    position: relative;
+    @include fz("20", "18");
+    padding-left: 62px;
+    font-weight: bold;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 58px;
+      height: 2px;
+      background-color: $black;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    &--white {
+      @extend .c-btn--line;
+      color: $white;
+
+      &::before {
+        background-color: $white;
+      }
+    }
+  }
 }

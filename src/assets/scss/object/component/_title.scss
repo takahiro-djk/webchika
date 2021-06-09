@@ -1,8 +1,17 @@
 .c-title {
-  @include fz("46", "36");
+  @include fz(46, 36);
   margin-bottom: 0.87em;
   letter-spacing: 0.032em;
   line-height: 1.28em;
+  &--center{
+    @extend .c-title;
+    text-align: center;
+  }
+
+  &--white{
+    @extend .c-title;
+    color: $white;
+  }
 }
 
 

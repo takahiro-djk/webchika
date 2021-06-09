@@ -1,7 +1,7 @@
 .p-top_about {
   &_contents {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
     &_textArea {
       display: flex;
@@ -12,7 +12,7 @@
 
     &_img {
       position: relative;
-      max-width: 650px;
+      // max-width: 650px;
       //width: calc(100% - 10% - 432px);
 
       // @include sp {
@@ -41,6 +41,67 @@
       img {
         position: relative;
         z-index: 1;
+      }
+    }
+  }
+}
+
+.p-top_service {
+  &_contents {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.p-top_works {
+  background-color: $black;
+
+  &_contents {
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+
+    &-main {
+      max-width: 680px;
+      width: 100%;
+
+      &_list {
+        display: flex;
+
+        li {
+          &:not(:nth-child(2n)) {
+            margin-right: 1em;
+          }
+
+          a {
+            display: inline-block;
+            color: $white;
+            margin: 1.16em 0;
+            @include fz(14);
+            border-bottom: 1px solid $white;
+          }
+
+        }
+      }
+    }
+
+    &-side {
+      &-inner li {
+        display: flex;
+        margin-bottom: 2.5em;
+
+        &:not(:nth-child(4n + 1)) {
+          margin-top: 1.875em;
+        }
+
+        img {
+          max-width: 180px;
+          margin-right: 1.625em;
+        }
+
+        p {
+          margin-bottom: 1.625em;
+        }
       }
     }
   }
