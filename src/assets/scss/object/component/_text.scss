@@ -33,6 +33,17 @@
   &_text {
     @include fz(16, 14);
     margin-bottom: 2em;
+
+    &--white {
+      @extend .c-textArea_text;
+      background-color: $white;
+      margin: 0;
+      padding: 1.375em 1.25em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
   }
 
   &:nth-child(2) {
@@ -57,5 +68,22 @@
   p {
     @include fz(16, 14);
     margin-bottom: 2em;
+  }
+
+  &_side{
+    @extend .c-text_area;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &--center {
+    @extend .c-text_area;
+    max-width: initial;
+
+    p {
+      line-height: 2.875em;
+    }
+
   }
 }

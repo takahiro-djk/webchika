@@ -88,8 +88,6 @@
     &-side {
       &-inner li {
         display: flex;
-        margin-bottom: 2.5em;
-
         &:not(:nth-child(4n + 1)) {
           margin-top: 1.875em;
         }
@@ -105,4 +103,43 @@
       }
     }
   }
+}
+
+.p-top_news {
+  &_list {
+    display: flex;
+    justify-content: center;
+
+    &_item {
+      &:first-child {
+        margin-right: 1.25em;
+      }
+
+      a {
+        display: flex;
+        max-width: 627px;
+        padding: 1.25em 1.5em;
+        background-color: $yellow;
+
+        img {
+          max-width: 280px;
+        }
+      }
+
+      &_title {
+        @include fz(16, 14);
+        margin-bottom: 0.75em;
+      }
+
+      &_text {
+        @include fz(16, 14);
+        margin-bottom: 1.6875em;
+      }
+    }
+  }
+}
+
+.p_top-contact{
+  padding: 5.625em;
+  background-color: $yellow;
 }
