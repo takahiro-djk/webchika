@@ -4,26 +4,78 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>WEBCHIKA</title>
+    <title>MOVE｜WEBCHIKA</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="WEBCHIKA" />
+    <meta property="og:title" content="MOVE｜WEBCHIKA" />
+    <!--20文字以内が好ましい-->
     <meta property="og:description" content="" />
+    <!--最適文字数 80~90-->
     <meta property="og:url" content="" />
     <meta property="og:site_name" content="WEBCHIKA" />
-    <link rel="stylesheet" href="https://use.typekit.net/wqr3nol.css">
+    <!--サイト名やブランド情報-->
+    <meta property="og:image" content="" />
+    <!--推奨size w1200×h630-->
+    <meta property="og:locale" content="ja_JP" />
+    <!-- font -->
+    <link rel="stylesheet" href="https://use.typekit.net/eek0pcc.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ycq5neu',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/script.js" defer></script>
 </head>
 
   <body>
     <div class="wapper p-top">
-      <header class="l_header">
+      <header class="l-header j-header">
+    <div class="l-header_logo">
+        <a href="/">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./assets/img/logo_icon.svg">
+                <img src="./assets/img/logo_02.svg" alt="MOVE" width="160" height="33.77">
+            </picture>
+        </a>
+    </div>
+
+    <div class="l-header_pageTitle">TOP</div>
+
+    <button class="l-header_btn j-header_btn">
+        <div class="l-header_btn_hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="l-header_btn_text pc">
+            <div class="l-header_btn_text_inner">
+                <span>MENU</span>
+                <span>CLOSE</span>
+            </div>
+        </div>
+    </button>
 
 
+    <nav class="l-header_nav">
+        <ul class="l-header_nav_inner">
+            <li class="l-header_nav_cmn"><a class="j-header_link" href="#">TOP</a></li>
+            <li class="l-header_nav_cmn"><a class="j-header_link" href="#">ABOUT</a></li>
+            <li class="l-header_nav_cmn"><a class="j-header_link" href="#">SERVICE</a></li>
+            <li class="l-header_nav_cmn"><a class="j-header_link" href="#">WORKS</a></li>
+            <li class="l-header_nav_cmn"><a class="j-header_link" href="#">NEWS</a></li>
+            <li class="l-header_nav_cmn"><a class="j-header_link" href="#">CONTACT</a></li>
+        </ul>
+    </nav>
 </header>
-
 
         <main class="p-main">
           <section class="l-mv">
@@ -33,9 +85,9 @@
                 What we make is a videos, a videos that changes the “Future”.</p>
             </div>
             <ul class="l-mv_sns">
-              <li><a href="#"><img src="/assets/img/icon_facebook.svg" alt="facebook"></a></li>
-              <li><a href="#"><img src="/assets/img/icon_instagram.svg" alt="instagram"></a></li>
-              <li><a href="#"><img src="/assets/img/icon_twitter.svg" alt="twitter"></a></li>
+              <li><a href="#"><img src="/assets/img/icon_facebook.svg" alt="facebook" width="60" height="60"></a></li>
+              <li><a href="#"><img src="/assets/img/icon_instagram.svg" alt="instagram" width="60" height="60"></a></li>
+              <li><a href="#"><img src="/assets/img/icon_twitter.svg" alt="twitter" width="60" height="60"></a></li>
             </ul>
           </section>
           <section class="p-top-about l_section">
@@ -191,24 +243,27 @@
           </section>
         </main>
 
-        <footer class="footer">
+        <footer class="l_footer">
   <div class="l-container">
-    <div class="footer_logo">
+
+    <div class="l_footer_logo">
       <img src="/assets//img/logo_03.svg" alt="footerのロゴ" width="138" height="104.48">
     </div>
-    <div class="c_sns">
-      <div class="c_sns_facebook_btn c_sns_btn">
-        <a href="#"><img src="/assets/img/icon_facebook.svg" alt="facebook" width="60" height="60"></a>
-      </div>
-      <div class="c_sns_twitter_btn c_sns_btn">
-        <a href="#"><img src="/assets/img/icon_twitter.svg" alt="twitter" width="60" height="60"></a>
-      </div>
-      <div class="c_sns_instagram_btn c_sns_btn">
-        <a href="#"><img src="/assets/img/icon_instagram.svg" alt="Instagram" width="60" height="60"></a>
-      </div>
-    </div>
-    <nav class="footer_nav">
-      <ul>
+
+    <ul class="l_footer_sns">
+      <li class="l_footer_sns_facebook_btn l_footer_sns_btn">
+        <a href="#"><img src="/assets/img/icon_facebook.svg" alt="facebook" width="32" height="32"></a>
+      </li>
+      <li class="l_footer_sns_twitter_btn l_footer_sns_btn">
+        <a href="#"><img src="/assets/img/icon_twitter.svg" alt="twitter" width="32" height="32"></a>
+      </li>
+      <li class="l_footer_sns_instagram_btn l_footer_sns_btn">
+        <a href="#"><img src="/assets/img/icon_instagram.svg" alt="Instagram" width="32" height="32"></a>
+      </li>
+    </ul>
+
+    <nav class="l_footer_nav">
+      <ul class="l_footer_nav_list">
         <li><a href="#">top</a></li>
         <li><a href="#">about</a></li>
         <li><a href="#">service</a></li>
@@ -218,6 +273,7 @@
       </ul>
     </nav>
     <p class="copyright">&copy;2021 asuma </p>
+  </div>
   </div>
 </footer>
 
